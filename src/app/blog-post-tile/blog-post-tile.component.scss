@@ -3,6 +3,15 @@
     color: lime;
 }
 
+// .blog-tile {
+//     margin: 20px;
+// }
+
+// :host apply styling to the PARENT level coponent
+:host {
+    margin: 20px;
+}
+
 
 // blog-btn
 // This has to be applied to ONE pasticular button
