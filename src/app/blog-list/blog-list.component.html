@@ -1,3 +1,5 @@
 <app-blog-post-tile 
-    *ngFor = "let post of blogPost"
+    *ngFor = "let post of blogPosts[0]"
 [post] = "post" ></app-blog-post-tile>
+
+<app-paginator></app-paginator>
