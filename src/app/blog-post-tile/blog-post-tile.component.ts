@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { BlogPost } from '../blog-post';
 import { TruncatePipe } from '../truncate.pipe';
-import { truncate } from 'fs';
+// import { truncate } from 'fs';
 
 @Component({
   selector: 'app-blog-post-tile',
