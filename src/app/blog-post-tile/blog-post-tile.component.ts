@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogPostTileComponent implements OnInit {
 
+  title: string;
+  summary: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.title = "Blog Title";
+    this.summary = "Blog Post Summary";
   }
 
 }
