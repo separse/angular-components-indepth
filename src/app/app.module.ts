@@ -18,7 +18,9 @@ import { TruncatePipe } from './truncate.pipe';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    TruncatePipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
