@@ -26,7 +26,11 @@ export class BlogPostTileComponent implements OnInit {
   }
 
   showFullSummary(){
-    this.post.summary = this.fullSummary;
+    if(this.post.summary.length == this.fullSummary.length){
+      this.post.summary = this.truncatePipe.transform(this.post.summary, 30);
+    }else{
+      this.post.summary = this.fullSummary;
+    }
   }
 
 }
