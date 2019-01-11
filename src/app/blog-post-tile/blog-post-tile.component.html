@@ -1,8 +1,10 @@
-<div class="card blog-tile">
+<div class="card blog-tile" [ngClass]="{'fav': post.isFav}">
+<!-- <div class="card blog-tile fav"> -->
   <div class="card-body">
     <h5 class="card-title">{{post.title}}</h5>
     <!-- <p class="card-text">{{post.summary | truncate: [30] }}</p> -->
     <p class="card-text" (click)="showFullSummary()">{{post.summary}}</p>
+    <a href="#" (click)= "markFav()" class="btn btn-primary blog-btn">Favorite</a> _____ 
     <a href="#" class="btn btn-primary blog-btn">Read</a>
   </div>
 </div>
