@@ -1,3 +1,8 @@
-<h1> Angular Multi Slot Content</h1>
-<ng-content></ng-content>
-<div> FOOTER  </div>
+<div>
+    <ng-content select="[header]"></ng-content>
+    <ng-content select="[blogPostlist]"></ng-content>
+</div>
+<ng-content select="[body]"></ng-content>
+<div>
+    <ng-content select="[footer]"></ng-content>
+</div>
